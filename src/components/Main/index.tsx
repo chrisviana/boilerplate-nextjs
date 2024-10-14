@@ -1,10 +1,9 @@
 import * as S from './styles'
 
-export const Main = ({ title = 'Teste Constrols ', describe = '' }) => {
+export const Main = () => {
 	return (
 		<S.Wrapper>
-			<h1>{title}</h1>
-			<p>{describe}</p>
+			<h1>React Avançado</h1>
 		</S.Wrapper>
 	)
 }
