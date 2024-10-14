@@ -8,7 +8,8 @@ declare global {
 	namespace jest {
 		interface AsymmetricMatcher {
 			$$typeof: symbol
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+
+			// eslint-disable-next-line @typescript-eslint/ban-types
 			sample?: string | RegExp | object | Array<any> | Function
 		}
 		type Value = string | number | RegExp | AsymmetricMatcher | undefined
